@@ -1,6 +1,8 @@
+import ClientList from "./Views/ClientList/ClientList";
+import './App.scss'
 
 const App = () => {
-  return <div>We hope you enjoy our challenge :)</div>;
-}
+  return <ClientList />;
+};
 
 export default App;
