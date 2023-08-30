@@ -1,0 +1,35 @@
+.item-container {
+  width: 60%;
+  min-width: 500px;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  &:nth-child(odd) {
+    background-color: #fafafa;
+  }
+  &.is-title-container {
+    background-color: var(--transparent);
+  }
+}
+
+.item-element {
+  width: 25%;
+  display: inline-block;
+  padding: 10px;
+  & input {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+  }
+}
+
+.item-textfield-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}

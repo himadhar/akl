@@ -1,6 +1,10 @@
 .clientlist-container {
   display: flex;
-  width: 100%;
+  flex-direction: column;
+  width: 60%;
+  max-width: 600px;
+  align-items: center;
+  margin: 0 auto;
   height: auto;
   background-color: var(--white);
 }

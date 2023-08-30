@@ -1,0 +1,22 @@
+.popup-container {
+  display: block;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  padding: 0 20px 10px;
+  position: relative;
+  margin: 0 auto;
+  width: 60%;
+  min-width: 300px;
+  max-width: 500px;
+  top: 50%;
+  transform: translateY(-50%);
+}
