@@ -9,7 +9,7 @@ const ClientItem = (props: ClientItemProps) => {
   return (
     <div
       className={"item-container" + (isDummy ? " is-title-container" : "")}
-      data-testid={ClientItemTestId + record?.id ?? ""}
+      data-testid={ClientItemTestId + (record?.id ?? "")}
     >
       <label className="item-element">
         {isDummy && <span className="item-title">Budget</span>}

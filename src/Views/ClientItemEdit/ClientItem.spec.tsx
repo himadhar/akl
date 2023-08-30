@@ -3,7 +3,7 @@ import ClientItem, { ClientItemEditTestId } from "./ClientItemEdit";
 import ClientItemEdit from "./ClientItemEdit";
 
 describe("ClientItem", () => {
-  const data = {
+  const record = {
     id: 1245,
     company_name: "Tesla",
     budget: 125000.0,
@@ -12,7 +12,7 @@ describe("ClientItem", () => {
   };
   render(
     <ClientItemEdit
-      record={data}
+      record={record}
       rowIndex={1}
       onCancelClickHandler={jest.fn()}
       onSaveClickHandler={jest.fn()}
@@ -22,7 +22,7 @@ describe("ClientItem", () => {
   afterEach(cleanup);
 
   it("should return true if the widget was rendered correctly", () => {
-    const result = screen.getAllByTestId(ClientItemEditTestId);
+    const result = screen.getAllByTestId(ClientItemEditTestId + record?.id);
     expect(result).toHaveLength(1);
   });
 });
