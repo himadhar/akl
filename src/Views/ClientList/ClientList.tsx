@@ -62,7 +62,7 @@ const ClientList = (props: ClientListProps) => {
           {clientListData.map((record, index) => {
             return (
               <ClientItem
-                key={`${record.id + record.budget}`}
+                key={`${record.id + record.company_name}`}
                 record={record}
                 rowIndex={index}
                 onEditClickHandler={onEditClickHandler}
