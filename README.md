@@ -13,9 +13,12 @@
 - `yarn test` to test
 - `yarn start` to view on localhost
 
+---
+
 ### API Setup
 ![image](https://github.com/himadhar/akl/assets/3104652/33d05138-5eb9-4b76-84cd-0025df9b4de1)
 
+---
 
 ### Unit tests
 <img width="477" alt="image" src="https://github.com/himadhar/akl/assets/3104652/075af7bb-80fe-44ba-8671-8146dfc6c529">
