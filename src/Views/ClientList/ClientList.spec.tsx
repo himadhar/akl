@@ -6,8 +6,8 @@ describe("ClientList", () => {
 
   afterEach(cleanup);
 
-  it("should return true if the widget was rendered correctly", () => {
-    const result = screen.getAllByTestId(ClientListTestId);
+  it("should return true if the widget was rendered correctly", async () => {
+    const result = await screen.getAllByTestId(ClientListTestId);
     expect(result).toHaveLength(1);
   });
 });
