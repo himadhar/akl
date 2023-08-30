@@ -1,4 +1,5 @@
-function App() {
+
+const App = () => {
   return <div>We hope you enjoy our challenge :)</div>;
 }
 
