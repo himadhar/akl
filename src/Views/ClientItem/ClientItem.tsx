@@ -27,7 +27,6 @@ const ClientItem = (props: ClientItemProps) => {
         <button
           className=" item-element"
           onClick={() => {
-            console.log(rowIndex);
             onEditClickHandler && onEditClickHandler(rowIndex);
           }}
         >
